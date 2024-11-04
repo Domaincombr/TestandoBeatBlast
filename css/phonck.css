@@ -1,0 +1,255 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(/img/nono.png);
+    background-color: #000000;
+    background-size: cover;
+    flex-wrap: wrap;
+    overflow-x: hidden;
+}
+
+header{
+    position: absolute;
+    height: 74px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0px;
+    background-color: transparent;
+    
+}
+
+.voltar{
+    position: absolute;
+    left: 40px;
+    font-size: 40px;
+    color: #fff;
+    top: 25%;
+    transition: mudar 2s ease;
+}
+.voltar :hover{
+    color: #90059f;
+}
+.headbrilho{
+    color: #9100ae;
+    animation: lus 3s  linear infinite alternate-reverse;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+
+}
+
+@keyframes lus {
+    to{
+        color: #9100ae;
+    }
+    from{
+        color: #9100ae3e;
+    }
+}
+
+
+
+.home{
+    position: absolute;
+    height: 10%;
+    width: 13%;
+    /* border: 5px solid #000000; */
+    /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.436); */
+    border-radius: 12px;
+    transform: translate(-50%,-50%);
+    top: 580px;
+    left: 67%;
+    display: flex;
+    align-items:center ;
+    justify-content: center;
+    /* background: linear-gradient(rgb(144, 1, 239),black) */
+    background-color: transparent;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    z-index: 300;
+}
+
+
+
+
+.logodowload{
+    position: absolute;
+    color: #ffffff;
+    font-size: 30px;
+    left: 20px;
+    top: 15px;
+    transition: selecionar 4s ease linear;
+}
+.logolike{
+    position: absolute;
+    color: #ffffff;
+    font-size: 30px;  
+   left: 100px;
+    transition: selecionar 4s ease;
+}
+
+.logodislike{
+    position: absolute;
+    color: #ffffff;
+    font-size: 30px;
+    left: 140px;
+    transition: selecionar 4s ease linear;
+    
+}
+
+/* animação das logos */
+.logolike :hover{    
+    color: rgb(86, 128, 25);
+    
+}
+.logodislike:hover{    
+color: rgb(248, 6, 6);
+}
+.logodowload:hover{    
+color: rgb(255, 255, 255);
+}
+
+.player{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    top: 18px;
+    width: 90%;
+    height: 500px;
+    margin: 0 10px;
+    padding: 10px;
+    border-radius: 12px;
+    /* background-color: #b60f0f; */
+    flex-wrap: wrap;
+    margin-top: 40px;
+    position: relative;
+    
+}
+
+   
+.logo{
+    position: relative;
+    background-color: rgb(0, 0, 0);
+    border-radius: 30px;
+    top: -20px;
+    width: 30%;
+    height: 280px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* mudar foto da musica */
+    background-image: url(/img/nacional.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* box-shadow: 0px 0px 10px #8705e4; */
+}
+
+.logo{
+    font-size: 200px;
+}
+
+#musicName{
+    white-space: nowrap;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 30px;
+    color: #fff;
+    position: relative;
+    font-family:Arial, Helvetica, sans-serif;
+    left: 85%;
+    top: -1%;
+    transform: translate(-50%,-50%);
+}
+
+.controls button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.controls{
+    position: relative;
+    /* border: 2px solid white; */
+    top: 20px;
+}
+.controls i {
+    font-size: 60px;
+    padding: 5px;
+    background: #25003f;
+    transition: all .0,3s;
+    border-radius: 50px;
+    border: none;
+    flex-wrap: wrap;
+    transition: luz 2s ease;
+    transition: transform 0.8s;
+}
+
+.controls i:hover{
+    background-color: rgb(14, 0, 28);
+    /* box-shadow: 0px 0px 7px 11px  rgb(255, 255, 255); */
+    transform: scale(1.1);
+}
+
+.time{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.time span {
+    font-size: 22px;
+    color: rgb(255, 255, 255);
+}
+.footer{
+    position: relative;
+    top: 20px;
+    /* border: 2px solid white; */
+    width: 50%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.progress-bar{
+    height: 8px;
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    transition: barinha 2s ease;
+}
+.progress-bar :hover{
+    /* box-shadow: 1px 1px 10px 10px rgb(255,255,255); */
+    border: 1px solid white;
+}
+.progress{
+    height: 8px;
+    background-color: #6c00b9;
+    border-radius: 5px;
+}
+
+
+
+
+@keyframes girar{
+    to{
+        transform: rotate(0deg);
+    }
+
+    from{
+        transform: rotate(100deg);
+    }
+}
+

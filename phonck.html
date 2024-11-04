@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/phonck.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <title>Space-music</title>
+</head>
+<body>
+    
+    <header>
+    <div class="voltar"><i class='bx bxs-chevrons-left'></i></div>
+
+    <!-- mudar nome  -->
+        <div class="headbrilho"><h1>JAZZ</h1></div>
+    </header>
+ 
+    <div class="home">
+        <!-- mudar musica para dowload -->
+        <a href="/src/Lofi Jazz _ Coffee _ Jazz [Lofi Fruits Release](MP3_160K).mp3"dowload style="color: rgb(255, 255, 255);"><div class="logodowload"><i class='bx bxs-download'><button</button></i></div></a>
+       
+
+        <div class="logolike"><i class='bx bxs-like' onclick="lerta()"></i></div>
+    
+        <div class="logodislike" onclick="nlerta()"><i class='bx bxs-dislike'></i></div>
+        
+    </div>
+    
+        <div class="player">
+            
+            <div class="logo">
+            </div>
+            <span id="musicName"></span>
+            <audio  id="player" src=""></audio>
+            <div class="controls">
+                <button id="prevButton" style="color:blueviolet; margin-right: 25px;"><i class="bx bx-skip-previous"></i></button>
+                    <button id="playPauseButton" style="color: blueviolet;"><i class='bx bx-pause-circle' ></i><button>
+                        <button id="nextButton" style="color:blueviolet; margin-left: 25px;"><i class="bx bx-skip-next"></i></button>
+            </div>
+            <div class="footer">
+                <div class="progress-bar">
+                    <div class="progress"></div>
+                </div>
+                <div class="time">
+                    <span id="currentTime">0:00</span>
+                    <span id="duration">0:00</span>
+                </div>
+            </div>
+        </div>
+        <script type="module" src="/js/songs.js"></script>
+</body>
+<script type="module" src="/js/scrips2.js"></script>
+
+</html>

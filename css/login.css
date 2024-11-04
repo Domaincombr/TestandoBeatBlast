@@ -1,0 +1,143 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background-image: url(/img/nono.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow-y: auto;
+  
+}
+.container{
+    position: relative;
+    left:50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+    /* border: 2px solid #fff; */
+    width:340px;
+    height: 500px;
+}
+.logo{
+    position: absolute;
+    top:-65px;
+    left: 50%;
+    /* border: 2px solid #fff; */
+    width:150px;
+    height: 188px;
+    transform: translateX(-50%);
+    background-image: url(/img/SPACE\ MUSIC\ \(1\).png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.baseLogin{
+    position: absolute;
+    top:136px;
+    left:50%;
+    transform: translateX(-50%);
+    width:330px;
+    height: 360px;
+    background-color: #00000080;
+    border-radius: 12px 32px 22px 32px;
+}
+.baseCad{
+    position: absolute;
+    top:136px;
+    left:50%;
+    transform: translateX(-50%);
+    width:330px;
+    height: 400px;
+    background-color: #00000080;
+    border-radius: 20px 0px 20px 0px;
+}
+.tituloLogin{
+    width:100%;
+    height: 30px;
+    /* border:1px solid #000; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color:#5500dd;
+    padding-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-family: fantasy;
+}
+.labels{
+    width:100%;
+    height: 30px;
+    /* border: 1px solid #000; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    padding-left: 15px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color:#5500dd;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+.campos{
+    width:100%;
+    height: 55px;
+    /* border: 1px solid #000; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 15px;
+}
+.campo{
+    width: 300px;
+    height: 48px;
+    border:none;
+    background-color: #ffffff;
+    border-radius: 10px;
+    outline: none;
+    padding-left: 8px;
+    padding-right: 8px;
+    font-size: 20px;
+    color:#333;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.botaoBase{
+    width:100%;
+    height: 55px;
+    /* border: 1px solid #000; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+.btLog{
+    width:140px;
+    height: 40px;
+    border: none;
+    margin-bottom: 10px;
+    background-color: #5500dd;
+    border-radius: 12px;
+    font-size: 18px;
+    color: #fff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.linkConta{
+    width:100%;
+    height: 55px;
+    /* border: 1px solid #000; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    font-size: 16px;
+   
+}
+
+.linkConta a{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #fff;
+    text-decoration: none;
+}
+
